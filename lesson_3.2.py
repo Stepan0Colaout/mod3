@@ -29,4 +29,5 @@ def strcounter2(a):                 #O(N)
 
 strcounter2(a)
 
-print("Hello")
+a = 'Minecraft'
+print(a)

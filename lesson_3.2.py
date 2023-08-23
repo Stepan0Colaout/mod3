@@ -1,4 +1,4 @@
-a = 'ABCAAC1C'                      #N=8    (кол-во символов)
+'''a = 'ABCAAC1C'                      #N=8    (кол-во символов)
 
 def strcounter(a):                  #O(N**2)
     for char in a:
@@ -30,4 +30,20 @@ def strcounter2(a):                 #O(N)
 strcounter2(a)
 
 a = 'Minecraft'
-print(a)
+print(a)'''
+
+#ДЗ
+a = 'а роза упала на лапу азора'
+
+def palindrom(a):
+    word = list(a)                          # Превращаем слово или фразу в список
+    word = list(filter(str.strip, word))    # Убираем пробелы в списке
+    drow = list(a)                          # Создаём новый список, чтобы его перевернуть
+    drow.reverse()                          # Переворачиваем новый список
+    drow = list(filter(str.strip, drow))    # Убираем пробелы в новом списке
+    if word == drow:                        # Сравниваем списки
+        print('True')
+    else:
+        print('False')
+
+palindrom(a)
